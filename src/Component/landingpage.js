@@ -13,7 +13,8 @@ class Landingpage extends Component{
                <Route path='/about' component={About}>
                    <Route path='about1' component={About1} />
                  </Route>
-                <Route path="/home" component={Home}/>
+                <Route exact path="/" component={Home}/>
+                <Route  path="/home" component={Home}/>
                  <Footer/>
             </div>
            

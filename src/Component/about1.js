@@ -12,6 +12,8 @@ class About1 extends Component{
                 <NavLink to="/home">Home</NavLink>
                 <NavLink to="/about/about1/about4">About</NavLink>
                 <NavLink to="/about/about1/about5">Status</NavLink>
+                
+                <Route exact path="/about/about1" component={About4}/>
                 <Route path="/about/about1/about4" component={About4}/>
                 <Route path="/about/about1/about5" component={About5}/>
 

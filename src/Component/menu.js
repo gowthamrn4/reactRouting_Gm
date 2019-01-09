@@ -4,26 +4,35 @@ import {Route,Link,Switch,BrowserRouter} from 'react-router-dom';
 import About from './about';
 import About1 from './about1';
 
+
 class Menu extends Component{
     render(){
+        var style={
+            padding:'10px'
+        }
         return(
             <div className="container">
-                <nav class="navbar navbar-expand-sm bg-light">
+    
+                 <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header" style={style}>
+     <NavLink to="/home"> <button class="btn btn-danger navbar-btn">Home</button></NavLink> 
+    </div>
+    <div class="navbar-header" style={style}>
+     <NavLink to="/about"> <button class="btn btn-danger navbar-btn">About</button></NavLink> 
+    </div>
+    <div class="navbar-header" style={style}>
+     <NavLink to="/about"> <button class="btn btn-danger navbar-btn">Contact</button></NavLink> 
+    </div>
+    <div class="navbar-header" style={style}>
+     <NavLink to="/about"> <button class="btn btn-danger navbar-btn">Gallery</button></NavLink> 
+    </div>
+    <div class="navbar-header" style={style}>
+     <NavLink to="/about"> <button class="btn btn-danger navbar-btn">Message</button></NavLink> 
+    </div>
 
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <NavLink to="/home" className="nav-link">Home</NavLink>
-                    </li>
-                     <li class="nav-item">
-                      <NavLink to="/about" className="nav-link">About</NavLink>
-                      </li>
-                       <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                       </li>
-                   </ul>
-
-                 </nav>
-             
+  </div>
+</nav>
                 
             </div>
         )

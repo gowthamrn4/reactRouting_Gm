@@ -32,6 +32,7 @@ class About extends Component{
                </div>
 
                <div className="col-md-6">
+               <Route exact path="/about" component={About1}/>
                <Route path="/about/about1" component={About1}/>
                <Route path="/about/about2" component={About2}/>
                </div>

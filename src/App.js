@@ -19,7 +19,7 @@ class App extends Component {
   
       <BrowserRouter>
       <div>
-         <Landingpage/><br></br>
+         <Landingpage/>
            {/* <Switch>
              <Route path="/home" component={Home}/>
              <Route path="/about" component={About}/>
